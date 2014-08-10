@@ -36,6 +36,11 @@ while True:
         if event.key == K_q:
           exit()
 
+  # paint black even the heavens
   screen.blit(background, (0, 0))
+
+  # news of great import! - heavenly bodies are defined by (plane, (colour - in rgb), (position), radius, width)
+  # the center of the geocentric universe
+  carmara = pygame.draw.circle(screen, (255, 255, 255), ((screen_width / 2), (screen_height / 2)), screen_height / 2 - 100, 1)
 
   pygame.display.update()
