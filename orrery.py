@@ -32,7 +32,6 @@ while True:
             screen = pygame.display.set_mode(SCREEN_SIZE, FULLSCREEN, 32)
           else:
             screen = pygame.display.set_mode(SCREEN_SIZE, 0, 32)
-      if event.type == KEYDOWN:
         if event.key == K_q:
           exit()
 
