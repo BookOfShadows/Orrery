@@ -39,8 +39,13 @@ while True:
   # paint black even the heavens
   screen.blit(background, (0, 0))
 
-  # news of great import! - heavenly bodies are defined by (plane, (colour - in rgb), (position), radius, width)
+  # news of great import!
+  # circular heavenly bodies are defined by (plane, (colour - in rgb), (position), radius, width)
+  # elliptical bodies are defined by (plane, (colour - in rgb), (pos x, pos y, width, height))
+
   # the center of the geocentric universe
   carmara = pygame.draw.circle(screen, (255, 255, 255), ((screen_width / 2), (screen_height / 2)), screen_height / 2 - 100, 1)
+
+  sat1 = pygame.draw.ellipse(screen, (255, 255, 255), (carmara.width / 2, carmara.width / 2, 10, 10))
 
   pygame.display.update()
