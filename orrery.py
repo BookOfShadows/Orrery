@@ -14,6 +14,7 @@ SCREEN_SIZE = (640, 480)
 pygame.display.set_caption(APP_NAME)
 
 screen = pygame.display.set_mode(SCREEN_SIZE, 0, 32)
+screen_width, screen_height = SCREEN_SIZE
 
 Fullscreen = False
 
