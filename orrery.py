@@ -22,6 +22,16 @@ background = pygame.Surface(SCREEN_SIZE)
 background = background.convert()
 background.fill((0, 0 ,0))
 
+class satellite:
+  def __init__(self, name):
+    sat_name = name
+    sat_size = 0.
+    sat_speed = 0.
+    sat_location = Vector2(0, 0)
+    sat_destination = Vector2(0, 0)
+    sat_image = pygame.draw.ellipse(screen, (255, 255, 255), (carmara.width / 2, carmara.width / 2, 10, 10))
+    sat_id = 0.
+
 while True:
   for event in pygame.event.get():
       if event.type == QUIT:
