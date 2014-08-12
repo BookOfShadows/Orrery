@@ -1,4 +1,4 @@
-def BergDump(sigil_path, sigil_time, sigil_name, house, no_vertices)
+def NameBurn(sigil_path, sigil_time, sigil_name, house, no_vertices)
 #an unproven method may provide a path to immanentizing sigils to the printed world.
 
 #collate libraries
